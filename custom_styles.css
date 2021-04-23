@@ -1,7 +1,20 @@
-.oe_list_content {
-  display: none;
+table.oe_list_content > tbody {
+	position: relative;
 }
 
-.oe_form_char_content {
-  color: pink;
+table.oe_list_content > tbody > tr:not([data-id]) {
+  position: fixed;
+  right: 1%;
+  bottom: 5%;
+  background-color:  #28a745!important;
+  border-radius: 5px;
+  transition: 300ms ease-in-out background;
+}
+
+table.oe_list_content > tbody > tr:not([data-id]):hover {
+  background-color: #269740!important;
+}
+
+td.oe_form_field_one2many_list_row_add > a {
+  color: white;
 }
